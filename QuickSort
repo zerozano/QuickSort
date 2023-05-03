@@ -33,18 +33,10 @@ void quicksort(int arr[], int low, int high) {
 }
 
 int main() {
-    int n = 5;
-    int v[5] = {0};
-
-    clock_t start = clock();
+    int n = 13;
+    int v[13] = {5, 4, 3 ,2 ,1, 65, 34, 123, 543 , 86, 34 ,575, 453};
 
     quicksort(v, 0, n - 1);
-
-    clock_t end = clock();
-
-    double tmp = (double)(end - start) / CLOCKS_PER_SEC;
-
-    printf("Execution time: %f seconds\n", tmp);
 
     return 0;
 }
